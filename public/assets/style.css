@@ -1,0 +1,83 @@
+:root{
+  --ink:#0f172a;
+  --muted:#64748b;
+  --brand:#2563eb;
+  --brand2:#22c55e;
+  --card:#ffffff;
+  --soft:#f6f8ff;
+  --shadow: 0 12px 30px rgba(2,6,23,.08);
+}
+
+* { font-family: system-ui, -apple-system, "Segoe UI", Tahoma, Arial; }
+
+.bg-soft{ background: radial-gradient(1200px 600px at 10% 0%, #e9f2ff 0%, transparent 55%),
+                     radial-gradient(900px 500px at 95% 10%, #eafff2 0%, transparent 50%),
+                     var(--soft); }
+
+.soft-shadow{ box-shadow: var(--shadow); }
+.glass-nav{
+  background: rgba(255,255,255,.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(15,23,42,.06);
+}
+
+.navbar-brand .brand-dot{
+  width:12px;height:12px;border-radius:50%;
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  display:inline-block;
+  box-shadow: 0 8px 18px rgba(37,99,235,.25);
+}
+
+.hero-wrap{
+  background: linear-gradient(135deg, rgba(255,255,255,.9), rgba(255,255,255,.75));
+  border: 1px solid rgba(15,23,42,.06);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.text-gradient{
+  background: linear-gradient(135deg, var(--brand), var(--brand2));
+  -webkit-background-clip:text;
+  background-clip:text;
+  color: transparent;
+}
+
+.hero-card{
+  background: var(--card);
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(15,23,42,.06);
+}
+
+.feature-card{
+  background: rgba(255,255,255,.85);
+  border: 1px solid rgba(15,23,42,.06);
+  border-radius: 18px;
+}
+
+.icon-bubble{
+  width:48px;height:48px;
+  border-radius: 16px;
+  display:flex; align-items:center; justify-content:center;
+  background: linear-gradient(135deg, rgba(37,99,235,.12), rgba(34,197,94,.12));
+  color: var(--ink);
+  font-size: 20px;
+}
+
+.mini-stat{
+  display:flex; align-items:center; gap:12px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(15,23,42,.06);
+  padding: 12px 14px;
+  border-radius: 16px;
+}
+
+.mini-stat i{
+  font-size: 20px;
+  width:38px;height:38px;
+  border-radius: 14px;
+  display:flex;align-items:center;justify-content:center;
+  background: rgba(15,23,42,.05);
+}
+
+.table > :not(caption) > * > * { padding: .85rem .75rem; }
